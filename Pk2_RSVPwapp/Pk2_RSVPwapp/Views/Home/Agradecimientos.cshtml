@@ -12,6 +12,22 @@
     <title>Agradecimientos</title>
 </head>
 <body>
+    @{
+        try{
+            WebMail.SmtpServer = "smtp.gmail.com";
+            WebMail.SmtpPort = 587;
+            WebMail.EnableSsl = true;
+            WebMail.UserName = "armando.rivagui@gmail.com";
+            WebMail.Password = "manuelito534";
+            WebMail.From = "armando.rivagui@gmail.com";
+
+            WebMail.Send("armando.rivagui@gmail.com", "Notification RSVP",
+                Model.Name + ((Model.WillAttend ?? false) ? "" : "no") + "Atendera");
+        }
+        catch(Exception){
+            @:<b>Error: No se pudo enviar el correo para confirmar</b>
+    }
+    }
     <div>
         <h1>¡Gracias,@Model.Name!</h1>
         @if (Model.WillAttend == true)

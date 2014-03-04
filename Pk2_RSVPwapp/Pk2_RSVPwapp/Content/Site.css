@@ -1,0 +1,33 @@
+﻿body {  
+    font-family:'Berlin Sans FB',Aparajita,serif;
+    border-top-color:aqua;
+    border-bottom-color:violet;
+    background-image:url("img.jpg")    
+}
+h1 { 
+    color: #808080;
+}
+h2 {
+    background-color: #abeeee;
+}
+h5 {
+
+}
+.field-validation-error {
+    color: #f00;
+}
+.field-validation-valid {
+    display: none;
+}
+.input-validation-error {
+    border: 1px solid #f00;
+    background-color: #fee;
+}
+.validation-summary-errors {
+    font-weight: bold;
+    color: #f00;
+}
+.validation-summary-valid {
+    display: none;
+}
+ 

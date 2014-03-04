@@ -9,16 +9,20 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="~/Content/Site.css" />
     <title>RsvpForm</title>
 </head>
 <body>
     @using (Html.BeginForm())
     {
+        @*Validacion del formulario*@
+        @Html.ValidationSummary()
+                
         <p>Tu nombre @Html.TextBoxFor(x => x.Name)</p>
         <p>Tucorreo electronico @Html.TextBoxFor(x => x.Email)</p>
         <p>Tu telefono @Html.TextBoxFor(x => x.Phone)</p>
         <p>
-            ¿Asistiras a la fiesta?
+           <p> ¿Asistiras a la fiesta?</p>
             @Html.DropDownListFor(x => x.WillAttend,
             new[]
             {
@@ -29,7 +33,7 @@
             },
             "Escoje, una opcion")
             </p>
-        <input type="submit" value="submit Rsvp" />
+            <input type="submit" value="submit Rsvp" style="background-color: #ff6a00"/>
     }
 </body>
 </html>

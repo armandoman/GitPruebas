@@ -7,13 +7,14 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="~/Content/Site.css" />
     <title>Index</title>
 </head>
 <body>
     <div>
-          <b>@ViewBag.Greeting Amigo </b>(from the View)
-        <p>Vamos a tener una fietsa increible<br/>
-        (to do: Mejorar redaccion, Agregar fotos o algo.)</p>
+         <div style="text-align:center"> <h1><b>@ViewBag.Greeting Amigo !!!</b>(from the View)</h1></div>
+       <div style="text-align:center"><h2>Vamos a tener una fiesta increible<br/>
+        (to do: Mejorar redaccion, Agregar fotos o algo.)</h2></div>
         @Html.ActionLink("RSVP ahora", "RsvpForm");
     </div>
 </body>
