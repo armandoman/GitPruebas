@@ -1,0 +1,71 @@
+﻿@model EployeeQuiz.Models.Employee
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="~/Content/StyleSheet1.css" />
+    <title>WorckerView</title>
+</head>
+<body>
+    <div>
+        @{ 
+            try
+            {
+            
+            
+      <center>  
+        <img src="@Url.Content(Model.PhotoPath)"
+            style="background-color:azure"
+            alt="Sample Image"
+            width="400" height="500"/>
+
+        <p>
+            <b>Id:</b> @Model.Id
+        </p>
+        <p>
+            <b>Posicion:</b> @Model.Position
+        </p>
+        <p>
+            <b>NOMBRE:</b> @Model.Name
+        </p>
+        <p>
+            <b>Apellidos:</b> @Model.FirstLastName @Model.SecondLastName
+        </p>
+        <p>
+            <b>Salario:</b> @Model.Wage
+        </p>
+        <p>
+            <b>Sex:</b> @Model.Sex
+        </p>
+          <p>
+               <input type="submit" value="Regresar" onclick="window.location.href = 'http://localhost:1061/'" />
+          </p>
+        </center>
+            
+            }
+            catch (Exception)
+            {
+            @: <b><h1>Lo sentimos</h1></b>
+            
+            <br >
+            <br >
+            <br >
+            <br >
+            <br >
+            <img src="~/Content/err.jpg" />
+            <p>
+                 <input type="submit" value="Regresar" onclick="window.location.href = 'http://localhost:1061/'" />
+            </p>
+            
+            }
+        }
+            
+    </div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+﻿body {
+
+    font-size:inherit;
+    font-family: 'Trebuchet MS',Verdana,Arial,serif;
+    image-orientation:auto;
+    border-top-color:aqua;
+    color:brown;
+    background-image:url(logi.jpg)
+    }
+
+
+h1 {
+    color: red ;
+ 
+    
+}
+
+.field-validation-error {
+color: magenta;
+}
+.field-validation-valid {
+    display:none;
+}
+.input-validation-error {
+    border: 1px solid #f00;
+    background-color: aquamarine;
+}
+.validation-summary-errors {
+    font-weight: bold;
+    color: blue;
+}
+.valitation-summary-valid {
+    display: none;
+
+}

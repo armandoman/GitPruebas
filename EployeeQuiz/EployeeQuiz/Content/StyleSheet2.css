@@ -1,0 +1,109 @@
+﻿body {
+    font-size: .85em;
+    font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
+    color: #232323;
+  /*  background-color: #ddd;*/
+    background:url(log1.jpg) no-repeat; 
+    background-size: 100% 150%;
+}
+
+h1 {
+    color:darkorange 
+}
+
+header, footer, nav, section {
+    display: block;
+}
+
+
+/* Styles for basic forms
+-----------------------------------------------------------*/
+fieldset {
+    border: 1px solid #ddd;
+    padding: 0 1.4em 1.4em 1.4em;
+    margin: 0 0 1.5em 0;
+}
+
+legend {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+
+
+
+
+/* Styles for validation helpers
+-----------------------------------------------------------*/
+.field-validation-error {
+    color: #f00;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+.input-validation-error {
+    border: 1px solid #f00;
+    background-color: #fee;
+}
+
+.validation-summary-errors {
+    font-weight: bold;
+    color: #f00;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+
+
+/* Stilo basico 1
+-----------------------------------------------------------*/
+input#nombre {
+    margin:20px;
+    width:200px;
+    height:30px;
+    padding-left:10px;
+    outline-color:blue;
+    border:1px solid groove;
+    -webkit-border-radius:4px;
+    -webkit-box-shadow:0px 0px 4px blue; 
+    -webkit-transition: width .5s;
+
+}
+    input#nombre:focus {
+        width:300px;
+    }
+
+input#pass {
+    margin:20px;
+    width:200px;
+    height:30px;
+    padding-left:10px;
+    outline-color:blue;
+    border:1px solid groove;
+    -webkit-border-radius:4px;
+    -webkit-box-shadow:0px 0px 4px blue; 
+    -webkit-transition: width .5s;
+
+}
+    input#pass:focus {
+        width:300px;
+    }
+
+input#boton {
+    padding:5px 50px;
+    color:white;
+    font-size:1em;
+    background-color:#5dade2;
+    -webkit-transition: background-color .25s;
+    border:0px;
+    -webkit-border-radius:5px;
+    -webkit-box-shadow: 0px 4px 0px #4AA4DF;
+}
+h2{
+    font-size:50px;
+    font-family:'Comic Sans MS';
+    color:#0094ff;
+}
